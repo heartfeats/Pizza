@@ -4,11 +4,54 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="jquery-3.2.1.js"></script>
-    <script src="scripts.js"></script>
-    <title>Pizza Order</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza on Pita</title>
   </head>
   <body>
+    <h1>Welcome to Pizza on Pita!</h1>
+    <p></p>
+    <div class="container">
+      <form id="order">
+        <h4>Select Pizza Size</h4>
+          <select class="form-control" id="size" required>
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+          <h4>Select Your Toppings</h4>
+          <input type="checkbox" name="topping" value=" Extra Cheese"> Extra Cheese<br>
+          <input type="checkbox" name="topping" value=" Onion"> Onion<br>
+          <input type="checkbox" name="topping" value=" Pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="topping" value=" Mushroom"> Mushroom<br>
+          <input type="checkbox" name="topping" value=" Bacon"> Bacon<br>
+          <input type="checkbox" name="topping" value=" Ham"> Ham<br>
+          <input type="checkbox" name="topping" value=" Jalapeno"> Jalapeno<br>
+          <input type="checkbox" name="topping" value=" Pineapple"> Pineapple<br>
+          <input type="checkbox" name="topping" value=" Feta"> Feta
+          <br>
+          <br>
+          <button type="submit" class="btn btn-info">Submit Order</button>
+      </form>
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h3>Ordered Pizzas</h3>
+            <ul id="pizzas">
 
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="pizza-details">
+            <h3>Pizza Details</h3>
+            <p>Size: <span class="size"></span></p>
+            <p>Toppings: <span class="toppings"></span></p>
+            <strong><p>Cost: $<span class="cost"></span><p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

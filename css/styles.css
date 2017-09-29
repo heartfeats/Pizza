@@ -1,0 +1,13 @@
+.order {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #51BFFE
+}
+
+#pizza-details {
+  display: none;
+}
+
+#size {
+  width: 250px;
+}
