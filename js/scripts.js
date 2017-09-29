@@ -40,6 +40,7 @@ function resetFields() {
 $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
+    $("#ordered-pizzas").show();
 
     var sizeSelected = $("select#size").val();
     var newPizza = new Pizza(sizeSelected);
@@ -53,7 +54,7 @@ $(document).ready(function() {
     resetFields();
 
     $(".order").last().click(function() {
-      $("#pizza-details").show();
+      $("#details").show();
       $(".size").text(newPizza.size);
       $(".toppings").text(newPizza.toppings);
       $(".cost").text(newPizza.cost());

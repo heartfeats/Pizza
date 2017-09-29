@@ -1,13 +1,34 @@
-.order {
-  text-decoration: underline;
-  cursor: pointer;
-  color: #51BFFE
+#size {
+  width: 250px;
 }
 
-#pizza-details {
-  display: none;
+h1 {
+  text-align: center;
+  color: #51BFFE;
+}
+
+#order {
+  text-align: center;
 }
 
 #size {
-  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+#ordered-pizzas {
+  display: none;
+  text-align: center;
+}
+
+#details {
+  display: none;
+  text-align: center;
+}
+
+#pizzas {
+  list-style-position: inside;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #51BFFE
 }
